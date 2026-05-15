@@ -476,8 +476,8 @@
         <div class="header-right">
             <nav>
                 <a href="#speisekarte"><span class="lang-inline-de active">Speisekarte</span><span class="lang-inline-en">Menu</span></a>
-                <a href="#zeiten"><span class="lang-inline-de active">Zeiten</span><span class="lang-inline-en">Hours</span></a>
-                <a href="#events">Events</a>
+                <a href="#zeiten" style="display:none;"><span class="lang-inline-de active">Zeiten</span><span class="lang-inline-en">Hours</span></a>
+                <a href="#events" style="display:none;">Events</a>
                 <a href="#kontakt"><span class="lang-inline-de active">Kontakt</span><span class="lang-inline-en">Contact</span></a>
             </nav>
             <button class="lang-btn active" data-lang="de" onclick="switchLanguage('de')">DE</button>
@@ -498,13 +498,17 @@
         <span class="lang-inline-de active">Jetzt Reservieren</span>
         <span class="lang-inline-en">Reserve a Table</span>
     </a>
+    <div style="margin-top: 1.2rem; font-size: 0.85rem; opacity: 0.75; line-height: 2;">
+        <a href="tel:+436766308644" style="color: var(--cream); text-decoration: none; display: block;">+43 676 63 08 644</a>
+        <a href="mailto:office.botenwirt@gmail.com" style="color: var(--cream); text-decoration: none; display: block;">office.botenwirt @ gmail.com</a>
+    </div>
 </div>
 
 <!-- ZWISCHENSAISON -->
-<div style="background: var(--brown-dark); border-bottom: 3px solid var(--gold); padding: 1.5rem; text-align: center;">
+<div style="display:none; background: var(--brown-dark); border-bottom: 3px solid var(--gold); padding: 1.5rem; text-align: center;">
     <p style="font-size: 1.05rem; line-height: 1.8; color: var(--cream); font-style: italic; max-width: 700px; margin: 0 auto;">
         🌿&nbsp;
-        <span class="lang-inline-de active">Der Botenwirt verabschiedet sich in die Zwischensaison und wir freuen uns, euch im Mai wieder bei uns begrüßen zu dürfen.</span>
+        <span class="lang-inline-de active">Der Botenwirt verabschiedet sich in die Zwischensaison und freuen uns, euch im Mai wieder bei uns begrüßen zu dürfen.</span>
         <span class="lang-inline-en">Der Botenwirt is heading into the off-season and we look forward to welcoming you back in May.</span>
         &nbsp;🌿
     </p>
@@ -519,11 +523,11 @@
         </h2>
         <div class="section-divider"></div>
 
-        <!-- VORSPEISE -->
+        <!-- VORSPEISEN & SUPPEN -->
         <div class="menu-section">
             <h3 class="menu-category-title">
-                <span class="lang-inline-de active">Vorspeise</span>
-                <span class="lang-inline-en">Starters</span>
+                <span class="lang-inline-de active">Vorspeisen &amp; Suppen</span>
+                <span class="lang-inline-en">Starters &amp; Soups</span>
             </h3>
             <div class="menu-columns">
                 <div>
@@ -543,7 +547,7 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <span class="menu-item-name">
-                                Hummus &amp; Falafel
+                                Spargel Tempura
                                 <span class="vegan-badge">VEGAN</span>
                             </span>
                             <span class="menu-item-price">
@@ -552,8 +556,8 @@
                             </span>
                         </div>
                         <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Marinierter Spinat, süße Nüsse</span>
-                            <span class="lang-inline-en">Marinated spinach, sweet nuts</span>
+                            <span class="lang-inline-de active">Vogerlsalat, Erdbeeren, Chilli Mayo</span>
+                            <span class="lang-inline-en">Lamb's lettuce, strawberries, chilli mayo</span>
                         </p>
                     </div>
                 </div>
@@ -573,6 +577,26 @@
                             <span class="lang-inline-de active">mit Frittaten <strong style="color:var(--brown-mid)">€ 6</strong> &nbsp;|&nbsp; mit Kaspressknödel <strong style="color:var(--brown-mid)">€ 8</strong></span>
                             <span class="lang-inline-en">with pancake strips <strong style="color:var(--brown-mid)">€ 6</strong> &nbsp;|&nbsp; with cheese dumplings <strong style="color:var(--brown-mid)">€ 8</strong></span>
                         </p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">
+                                Tom Kha-Suppe
+                                <span class="vegan-badge" style="background:var(--green)">VEG</span>
+                            </span>
+                            <span class="menu-item-price">€ 8</span>
+                        </div>
+                        <p class="menu-item-desc">
+                            <span class="lang-inline-de active">Kokos, Karotte, Zucchini, Pilze, Tomate</span>
+                            <span class="lang-inline-en">Coconut, carrot, zucchini, mushrooms, tomato</span>
+                        </p>
+                        <div class="menu-item-header" style="margin-top:0.3rem;">
+                            <span class="menu-item-desc">
+                                <span class="lang-inline-de active">mit Shrimps</span>
+                                <span class="lang-inline-en">with shrimps</span>
+                            </span>
+                            <span class="menu-item-price">€ 11</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -595,43 +619,77 @@
                             <span class="menu-item-price">€ 19</span>
                         </div>
                         <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Kartoffelsalat oder Pommes, Preiselbeeren</span>
-                            <span class="lang-inline-en">Potato salad or fries, cranberries</span>
-                        </p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-name">Piccata mit Maishendlbrust</span>
-                            <span class="menu-item-price">€ 21</span>
-                        </div>
-                        <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Tomatenpasta, Basilikum</span>
-                            <span class="lang-inline-en">Tomato pasta, basil</span>
+                            <span class="lang-inline-de active">Frühlings-Kartoffel oder Pommes, Preiselbeeren</span>
+                            <span class="lang-inline-en">Spring potatoes or fries, cranberries</span>
                         </p>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <span class="menu-item-name">
-                                Pasta mit Trüffelrahm
-                                <span class="vegan-badge" style="background:var(--green)">VEG</span>
+                                <span class="lang-inline-de active">Cordon Bleu vom Schwein</span>
+                                <span class="lang-inline-en">Cordon Bleu (Pork)</span>
                             </span>
-                            <span class="menu-item-price">€ 19</span>
+                            <span class="menu-item-price">€ 21</span>
                         </div>
-                        <p class="menu-item-desc">Parmesan</p>
+                        <p class="menu-item-desc">
+                            <span class="lang-inline-de active">Frühlings-Kartoffel oder Pommes, Preiselbeeren</span>
+                            <span class="lang-inline-en">Spring potatoes or fries, cranberries</span>
+                        </p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Currywurst "BTW-Style"</span>
+                            <span class="menu-item-price">€ 12</span>
+                        </div>
+                        <p class="menu-item-desc">
+                            <span class="lang-inline-de active">Hausgemachte Currysauce, Röstzwiebel, Pommes</span>
+                            <span class="lang-inline-en">Homemade curry sauce, roasted onions, fries</span>
+                        </p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Hühner Teriyaki mit Sesam</span>
+                            <span class="menu-item-price">€ 22</span>
+                        </div>
+                        <p class="menu-item-desc">
+                            <span class="lang-inline-de active">Spargel-Karotten Gemüse, Jasminreis</span>
+                            <span class="lang-inline-en">Asparagus-carrot vegetables, jasmine rice</span>
+                        </p>
                     </div>
                 </div>
                 <div>
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <span class="menu-item-name">
-                                Pinzgauer Kasnocken
+                                Pasta mit Bärlauch Pesto
                                 <span class="vegan-badge" style="background:var(--green)">VEG</span>
                             </span>
                             <span class="menu-item-price">€ 18</span>
                         </div>
+                        <p class="menu-item-desc">Tomate, Parmesan</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">
+                                Pasta mit Spargel &amp; Erbsen
+                                <span class="vegan-badge" style="background:var(--green)">VEG</span>
+                            </span>
+                            <span class="menu-item-price">€ 20</span>
+                        </div>
                         <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Röstzwiebel, gehackte Kräuter, Salat</span>
-                            <span class="lang-inline-en">Roasted onions, chopped herbs, salad</span>
+                            <span class="lang-inline-de active">Spargel-Erbsenragout, Parmesan</span>
+                            <span class="lang-inline-en">Asparagus-pea ragout, parmesan</span>
+                        </p>
+                    </div>
+                    <div class="menu-item" style="margin-top:1rem; padding-top:1rem; border-top:1px solid var(--cream-dark);">
+                        <p class="menu-item-name" style="font-style:italic; margin-bottom:0.5rem;">Pasta Upgrade</p>
+                        <p class="menu-item-desc">
+                            <span class="lang-inline-de active">+ Shrimps, Knoblauch &amp; Chilli <strong style="color:var(--brown-mid)">€ 10</strong></span>
+                            <span class="lang-inline-en">+ Shrimps, garlic &amp; chilli <strong style="color:var(--brown-mid)">€ 10</strong></span>
+                        </p>
+                        <p class="menu-item-desc">
+                            <span class="lang-inline-de active">+ Räucherlachs &amp; Avocado Mash <strong style="color:var(--brown-mid)">€ 10</strong></span>
+                            <span class="lang-inline-en">+ Smoked salmon &amp; avocado mash <strong style="color:var(--brown-mid)">€ 10</strong></span>
                         </p>
                     </div>
                 </div>
@@ -656,8 +714,6 @@
                             <span class="lang-inline-en">Leaf salad, raw vegetables, cranberry dressing</span>
                         </p>
                     </div>
-                </div>
-                <div>
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <span class="menu-item-name">
@@ -667,46 +723,20 @@
                             <span class="menu-item-price">€ 18</span>
                         </div>
                         <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Blattsalat, Rohkost, Kräuter Mayo, Dressing</span>
-                            <span class="lang-inline-en">Leaf salad, raw vegetables, herb mayo, dressing</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ASIA SPECIAL -->
-        <div class="menu-section">
-            <h3 class="menu-category-title">Asia Special</h3>
-            <div class="menu-columns">
-                <div>
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-name">Thai Kokos-Curry</span>
-                        </div>
-                        <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Karotte, Pilze, Zucchini, Chili</span>
-                            <span class="lang-inline-en">Carrot, mushrooms, zucchini, chili</span>
-                        </p>
-                        <p class="menu-item-desc" style="margin-top:0.4rem;">
-                            <span class="lang-inline-de active">Hühnerfleisch &amp; Jasminreis <strong style="color:var(--brown-mid)">€ 23</strong></span>
-                            <span class="lang-inline-en">Chicken &amp; jasmine rice <strong style="color:var(--brown-mid)">€ 23</strong></span>
-                        </p>
-                        <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Garnelen &amp; Udon Nudeln <strong style="color:var(--brown-mid)">€ 27</strong></span>
-                            <span class="lang-inline-en">Prawns &amp; udon noodles <strong style="color:var(--brown-mid)">€ 27</strong></span>
+                            <span class="lang-inline-de active">Blattsalat, Rohkost, Trüffel Mayo, Hausdressing</span>
+                            <span class="lang-inline-en">Leaf salad, raw vegetables, truffle mayo, house dressing</span>
                         </p>
                     </div>
                 </div>
                 <div>
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <span class="menu-item-name">Tuna Sashimi &amp; Gurke</span>
+                            <span class="menu-item-name">"Botenwirt"-Salat</span>
                             <span class="menu-item-price">€ 20</span>
                         </div>
                         <p class="menu-item-desc">
-                            <span class="lang-inline-de active">Ponzu-Soja Sauce, Chili-Mayo, Gurkensalat mit Sesam</span>
-                            <span class="lang-inline-en">Ponzu-soy sauce, chili mayo, cucumber salad with sesame</span>
+                            <span class="lang-inline-de active">Räucherlachs, Avocado Mash, Erdäpfelrösti, Blattsalat, Rohkost, Hausdressing</span>
+                            <span class="lang-inline-en">Smoked salmon, avocado mash, potato rösti, leaf salad, raw vegetables, house dressing</span>
                         </p>
                     </div>
                 </div>
@@ -721,10 +751,10 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <span class="menu-item-name">
-                                <span class="lang-inline-de active">Pommes mit Kräuter Mayo</span>
-                                <span class="lang-inline-en">Fries with herb mayo</span>
+                                <span class="lang-inline-de active">Portion Pommes</span>
+                                <span class="lang-inline-en">Portion of fries</span>
                             </span>
-                            <span class="menu-item-price">€ 9</span>
+                            <span class="menu-item-price">€ 8</span>
                         </div>
                     </div>
                     <div class="menu-item">
@@ -741,10 +771,19 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <span class="menu-item-name">
-                                <span class="lang-inline-de active">Gebratene Grüne Bohne, Speck</span>
-                                <span class="lang-inline-en">Fried green beans with bacon</span>
+                                <span class="lang-inline-de active">Gebackene Maiskolben &amp; Chilli-Mayo</span>
+                                <span class="lang-inline-en">Baked corn cob &amp; chilli mayo</span>
                             </span>
-                            <span class="menu-item-price">€ 5</span>
+                            <span class="menu-item-price">€ 8</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">
+                                <span class="lang-inline-de active">Spargel Grün &amp; Weiß, Sauce Hollandaise</span>
+                                <span class="lang-inline-en">Green &amp; white asparagus, hollandaise sauce</span>
+                            </span>
+                            <span class="menu-item-price">€ 10</span>
                         </div>
                     </div>
                 </div>
@@ -755,8 +794,8 @@
                     <span class="lang-inline-de active">Möchten Sie Ihre Hauptspeisen teilen?</span>
                     <span class="lang-inline-en">Would you like to share your main course?</span>
                 </strong><br>
-                <span class="lang-inline-de active">Wir freuen uns, wenn Sie unsere Speisen gemeinsam genießen möchten. Für das zusätzliche Gedeck sowie unseren Service berechnen wir <strong>5,00 € Servicepauschale</strong>. Kinder bis einschließlich 14 Jahre sind von dieser Gebühr ausgenommen. &nbsp;·&nbsp; Für unser Take-away-Geschirr berechnen wir einen Unkostenbeitrag von <strong>1,00 €</strong>. &nbsp;·&nbsp; <strong>Kartenzahlung ab € 50 möglich.</strong></span>
-                <span class="lang-inline-en">We are happy when you enjoy our dishes together. For the additional cover and service we charge a <strong>€5.00 service fee</strong>. Children up to and including 14 years are exempt. &nbsp;·&nbsp; For take-away packaging we charge a contribution of <strong>€1.00</strong>. &nbsp;·&nbsp; <strong>Card payment from € 50.</strong></span>
+                <span class="lang-inline-de active">Wir freuen uns, wenn Sie unsere Speisen gemeinsam genießen möchten. Für das zusätzliche Gedeck sowie unseren Service berechnen wir <strong>5,00 € Servicepauschale</strong>. Kinder bis einschließlich 14 Jahre sind von dieser Gebühr ausgenommen. &nbsp;·&nbsp; Für unser Take-away-Geschirr berechnen wir einen Unkostenbeitrag von <strong>1,00 €</strong>.</span>
+                <span class="lang-inline-en">We are happy when you enjoy our dishes together. For the additional cover and service we charge a <strong>€5.00 service fee</strong>. Children up to and including 14 years are exempt. &nbsp;·&nbsp; For take-away packaging we charge a contribution of <strong>€1.00</strong>.</span>
                 <br><br>
                 <em>
                     <span class="lang-inline-de active">Gerne informieren wir Sie über Unverträglichkeiten od. Allergien – zögern Sie nicht und fragen Sie bei unserem Team nach.</span>
@@ -767,10 +806,8 @@
     </section>
 </div>
 
-
-
 <!-- EVENTS -->
-<div class="section-wrapper" id="events">
+<div class="section-wrapper" id="events" style="display:none;">
     <section>
         <h2 class="section-title">Events</h2>
         <div class="section-divider"></div>
@@ -873,6 +910,10 @@
     <p>
         <span class="lang-inline-de active">Alle Preise inkl. gesetzlicher MwSt. | Änderungen vorbehalten</span>
         <span class="lang-inline-en">All prices incl. VAT | Subject to change</span>
+    </p>
+    <p style="margin-top:0.8rem; opacity:0.4; font-size:0.72rem;">
+        <span class="lang-inline-de active">Diese Website wurde mit Unterstützung von Künstlicher Intelligenz (KI) erstellt.</span>
+        <span class="lang-inline-en">This website was created with the support of Artificial Intelligence (AI).</span>
     </p>
     <div class="footer-links">
         <button onclick="toggleLegal('impressum')">Impressum</button>
